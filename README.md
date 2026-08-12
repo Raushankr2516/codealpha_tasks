@@ -1,54 +1,57 @@
-# CodeAlpha Internship Tasks
+# 🚀 CodeAlpha Internship Tasks
 
-This repository contains my Machine Learning projects completed as part of the CodeAlpha Internship.
+This repository contains my **Machine Learning projects** completed as part of the **CodeAlpha Internship**.
 
-## Projects
+## 📌 Projects
 
-### 1. Credit Scoring Model
-A machine learning project that predicts credit risk using customer financial and demographic information.
+### 1️⃣ 💳 Credit Scoring Model
 
-**Technologies:** Python, Pandas, NumPy, Scikit-learn, Machine Learning
+A machine learning project that predicts **credit risk** using customer financial and demographic information.
 
-**Models Used:**
-- Logistic Regression
-- Decision Tree
-- Random Forest
+🔧 **Technologies:** Python, Pandas, NumPy, Scikit-learn, Machine Learning
 
-**Best Model:** Random Forest
+🤖 **Models Used:**
+- 🔹 Logistic Regression
+- 🔹 Decision Tree
+- 🔹 Random Forest
 
----
-
-### 2. Disease Prediction ML
-A machine learning project for predicting the presence of heart disease based on medical data.
-
-**Technologies:** Python, Pandas, NumPy, Scikit-learn, XGBoost
-
-**Models Used:**
-- Logistic Regression
-- SVM
-- Random Forest
-- XGBoost
-
-**Best Model:** Random Forest
+🏆 **Best Model:** Random Forest
 
 ---
 
-### 3. Emotion Recognition from Speech
-A deep learning project that recognizes human emotions from speech/audio features.
+### 2️⃣ 🩺 Disease Prediction ML
 
-**Dataset:** RAVDESS
+A machine learning project for predicting the **presence of heart disease** based on medical data.
 
-**Technologies:** Python, TensorFlow, Keras, Librosa, MFCC
+🔧 **Technologies:** Python, Pandas, NumPy, Scikit-learn, XGBoost
 
-**Model:** CNN-based Deep Learning Model
+🤖 **Models Used:**
+- 🔹 Logistic Regression
+- 🔹 SVM
+- 🔹 Random Forest
+- 🔹 XGBoost
+
+🏆 **Best Model:** Random Forest
 
 ---
 
-## Repository Structure
+### 3️⃣ 🎙️ Emotion Recognition from Speech
+
+A deep learning project that recognizes **human emotions from speech/audio features**.
+
+📊 **Dataset:** RAVDESS
+
+🔧 **Technologies:** Python, TensorFlow, Keras, Librosa, MFCC
+
+🧠 **Model:** CNN-based Deep Learning Model
+
+---
+
+## 📂 Repository Structure
 
 ```text
 codealpha_tasks/
 │
-├── CodeAlpha_Credit_Scoring/
-├── CodeAlpha_Disease_Prediction/
-└── CodeAlpha_Emotion_Recognition/
+├── 💳 CodeAlpha_Credit_Scoring/
+├── 🩺 CodeAlpha_Disease_Prediction/
+└── 🎙️ CodeAlpha_Emotion_Recognition/
