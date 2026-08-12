@@ -1,276 +1,150 @@
-\# Disease Prediction from Medical Data
+# 🫀 Disease Prediction from Medical Data
 
+## 📌 Project Overview
 
+This project focuses on predicting the possibility of heart disease based on patient medical data using **Machine Learning classification algorithms**.
 
-\## Project Overview
+The project uses the **UCI Heart Disease Dataset** and compares four different Machine Learning algorithms:
 
+- 🔹 Logistic Regression
+- 🔹 Support Vector Machine (SVM)
+- 🔹 Random Forest
+- 🔹 XGBoost
 
+The models are evaluated using **Accuracy, Precision, Recall, F1 Score, and ROC-AUC**.
 
-This project predicts the possibility of heart disease using patient medical data and Machine Learning classification algorithms.
+---
 
+## 🎯 Objective
 
+The main objective of this project is to develop a Machine Learning model that can predict the possibility of heart disease based on patient medical features.
 
-The project uses the UCI Heart Disease dataset and compares four classification algorithms:
+---
 
+## 📂 Dataset
 
+**Dataset:** UCI Heart Disease Dataset
 
-\* Logistic Regression
+- 📌 Total Records: **303**
+- 📌 Input Features: **13**
+- 📌 Target: **Heart Disease / No Heart Disease**
 
-\* Support Vector Machine (SVM)
+The original target variable contains multiple disease severity levels. For this project, it was converted into binary classification:
 
-\* Random Forest
+- 🟢 `0` = No Heart Disease
+- 🔴 `1` = Heart Disease
 
-\* XGBoost
+---
 
+## 📋 Features
 
+The dataset contains the following features:
 
-\## Objective
+| Feature | Description |
+|---|---|
+| `age` | Age of the patient |
+| `sex` | Gender |
+| `cp` | Chest Pain Type |
+| `trestbps` | Resting Blood Pressure |
+| `chol` | Cholesterol Level |
+| `fbs` | Fasting Blood Sugar |
+| `restecg` | Resting ECG Results |
+| `thalach` | Maximum Heart Rate |
+| `exang` | Exercise-Induced Angina |
+| `oldpeak` | ST Depression |
+| `slope` | Slope of ST Segment |
+| `ca` | Number of Major Vessels |
+| `thal` | Thalassemia |
 
+---
 
+## 🛠️ Technologies Used
 
-To build a Machine Learning model that predicts the possibility of heart disease based on patient medical features.
+- 🐍 Python
+- ☁️ Google Colab
+- 🐼 Pandas
+- 🔢 NumPy
+- 📊 Matplotlib
+- 🤖 Scikit-learn
+- 🚀 XGBoost
+- 💾 Joblib
 
+---
 
+## 🤖 Machine Learning Algorithms
 
-\## Dataset
+The following classification algorithms were implemented:
 
+1. 🔹 Logistic Regression
+2. 🔹 Support Vector Machine (SVM)
+3. 🔹 Random Forest
+4. 🔹 XGBoost
 
+---
 
-\*\*Dataset:\*\* UCI Heart Disease Dataset
+## ⚙️ Data Preprocessing
 
+The following preprocessing steps were performed:
 
+- 📥 Data Loading
+- 🔍 Data Inspection
+- 🧹 Data Cleaning
+- 🔄 Data Type Conversion
+- 🎯 Target Variable Conversion
+- 📊 Exploratory Data Analysis
+- ✂️ Train-Test Split
+- 📏 Feature Scaling using StandardScaler
 
-\* Total records: 303
+---
 
-\* Input features: 13
+## 📊 Model Performance
 
-\* Target: Heart Disease / No Heart Disease
+| Model | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression | 86.89% | 81.25% | 92.86% | 86.67% | 87.34% |
+| SVM | 85.25% | 80.65% | 89.29% | 84.75% | 85.55% |
+| 🏆 Random Forest | **88.52%** | **81.82%** | **96.43%** | **88.52%** | **89.12%** |
+| XGBoost | 85.25% | 78.79% | 92.86% | 85.25% | 85.82% |
 
+---
 
+## 🏆 Best Model
 
-The original target values were converted into binary classification:
+**Random Forest** achieved the best overall performance among the tested models.
 
+### 📈 Random Forest Results
 
+- 🎯 Accuracy: **88.52%**
+- 🎯 Precision: **81.82%**
+- 🎯 Recall: **96.43%**
+- 🎯 F1 Score: **88.52%**
+- 🎯 ROC-AUC: **89.12%**
 
-\* `0` → No Heart Disease
+---
 
-\* `1` → Heart Disease
-
-
-
-\## Features
-
-
-
-\* Age
-
-\* Sex
-
-\* Chest Pain Type (cp)
-
-\* Resting Blood Pressure (trestbps)
-
-\* Cholesterol (chol)
-
-\* Fasting Blood Sugar (fbs)
-
-\* Resting ECG (restecg)
-
-\* Maximum Heart Rate (thalach)
-
-\* Exercise-Induced Angina (exang)
-
-\* ST Depression (oldpeak)
-
-\* Slope
-
-\* Number of Major Vessels (ca)
-
-\* Thalassemia (thal)
-
-
-
-\## Technologies Used
-
-
-
-\* Python
-
-\* Google Colab
-
-\* Pandas
-
-\* NumPy
-
-\* Matplotlib
-
-\* Scikit-learn
-
-\* XGBoost
-
-\* Joblib
-
-
-
-\## Machine Learning Algorithms
-
-
-
-1\. Logistic Regression
-
-2\. Support Vector Machine (SVM)
-
-3\. Random Forest
-
-4\. XGBoost
-
-
-
-\## Data Preprocessing
-
-
-
-\* Data loading
-
-\* Missing value handling
-
-\* Data type conversion
-
-\* Target variable conversion
-
-\* Train-test split
-
-\* Feature scaling using StandardScaler
-
-
-
-\## Model Performance
-
-
-
-| Model               | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
-
-| ------------------- | -------: | --------: | -----: | -------: | ------: |
-
-| Logistic Regression |   86.89% |    81.25% | 92.86% |   86.67% |  87.34% |
-
-| SVM                 |   85.25% |    80.65% | 89.29% |   84.75% |  85.55% |
-
-| Random Forest       |   88.52% |    81.82% | 96.43% |   88.52% |  89.12% |
-
-| XGBoost             |   85.25% |    78.79% | 92.86% |   85.25% |  85.82% |
-
-
-
-\## Best Model
-
-
-
-Random Forest achieved the best overall performance among the tested models.
-
-
-
-\*\*Random Forest Results:\*\*
-
-
-
-\* Accuracy: 88.52%
-
-\* Precision: 81.82%
-
-\* Recall: 96.43%
-
-\* F1 Score: 88.52%
-
-\* ROC-AUC: 89.12%
-
-
-
-\## Project Workflow
-
-
+## 🔄 Project Workflow
 
 ```text
-
-UCI Heart Disease Dataset
-
-&#x20;       ↓
-
-Data Loading
-
-&#x20;       ↓
-
-Data Cleaning
-
-&#x20;       ↓
-
-Exploratory Data Analysis
-
-&#x20;       ↓
-
-Data Preprocessing
-
-&#x20;       ↓
-
-Train-Test Split
-
-&#x20;       ↓
-
-Feature Scaling
-
-&#x20;       ↓
-
-Model Training
-
-&#x20;       ↓
-
-Model Evaluation
-
-&#x20;       ↓
-
-Model Comparison
-
-&#x20;       ↓
-
-Best Model Selection
-
-&#x20;       ↓
-
-Heart Disease Prediction
-
-```
-
-
-
-\## Repository Contents
-
-
-
-\* `Disease\_Prediction.ipynb` – Complete Google Colab notebook
-
-\* `heart\_disease\_model.pkl` – Trained Random Forest model
-
-\* `scaler.pkl` – Feature scaler
-
-\* `README.md` – Project documentation
-
-\* `requirements.txt` – Required Python libraries
-
-
-
-\## Disclaimer
-
-
-
-This project is developed for educational and academic purposes. The predictions generated by the model should not be considered a substitute for professional medical diagnosis or medical advice.
-
-
-
-\## Author
-
-
-
-Developed as part of the \*\*CodeAlpha Machine Learning Internship\*\*.
-
-
-
+📂 UCI Heart Disease Dataset
+            ↓
+📥 Data Loading
+            ↓
+🧹 Data Cleaning
+            ↓
+📊 Exploratory Data Analysis
+            ↓
+⚙️ Data Preprocessing
+            ↓
+✂️ Train-Test Split
+            ↓
+📏 Feature Scaling
+            ↓
+🤖 Model Training
+            ↓
+🔬 Model Evaluation
+            ↓
+📊 Model Comparison
+            ↓
+🏆 Best Model Selection
+            ↓
+🫀 Heart Disease Prediction
