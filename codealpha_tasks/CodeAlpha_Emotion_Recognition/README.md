@@ -670,7 +670,3 @@ The baseline CNN achieved **52.78% test accuracy**, while the final CNN trained 
 The project demonstrates how proper **audio preprocessing, feature extraction, data augmentation, CNN architecture design, and evaluation techniques** can significantly improve the performance of speech emotion classification.
 
 ---
-
-## ⭐ If You Find This Project Useful
-
-If you found this project helpful or interesting, consider giving the repository a ⭐ on GitHub.
