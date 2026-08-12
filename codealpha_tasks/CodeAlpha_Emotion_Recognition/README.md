@@ -417,17 +417,7 @@ Highest Probability Class
     ↓
 Predicted Emotion + Confidence
 ```
-
-### Example Output
-
-```text
-========================================
-         SPEECH EMOTION RESULT
-========================================
-Audio File : example.wav
-Predicted Emotion : happy
-Confidence        : XX.XX%
-========================================
+
 ## 🛠️ Technologies Used
 
 ### Programming Language
