@@ -427,16 +427,7 @@ Predicted Emotion + Confidence
 Audio File : example.wav
 Predicted Emotion : happy
 Confidence        : XX.XX%
-========================================
-```
-
----
-
-
-```
-
----
-
+========================================
 ## 🛠️ Technologies Used
 
 ### Programming Language
